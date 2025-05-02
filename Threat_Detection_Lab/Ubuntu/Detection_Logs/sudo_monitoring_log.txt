@@ -1,0 +1,29 @@
+----
+time->Thu May  1 14:23:09 2025
+type=PROCTITLE msg=audit(1746123789.447:192): proctitle=617564697463746C002D6100616C776179732C65786974002D460070617468002F7573722F62696E2F7375646F002D46007065726D0078002D6B007375646F5F6D6F6E69746F72696E67
+type=SYSCALL msg=audit(1746123789.447:192): arch=c000003e syscall=44 success=yes exit=1084 a0=4 a1=7fff740817c0 a2=43c a3=0 items=0 ppid=4908 pid=4909 auid=1001 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1746123789.447:192): auid=1001 ses=3 subj=unconfined op=add_rule key="sudo_monitoring" list=4 res=1
+----
+time->Thu May  1 14:23:17 2025
+type=PROCTITLE msg=audit(1746123797.609:195): proctitle=7375646F006C73002F726F6F74
+type=PATH msg=audit(1746123797.609:195): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=146158 dev=08:05 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1746123797.609:195): item=0 name="/usr/bin/sudo" inode=132306 dev=08:05 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1746123797.609:195): cwd="/home/zakiya"
+type=EXECVE msg=audit(1746123797.609:195): argc=3 a0="sudo" a1="ls" a2="/root"
+type=SYSCALL msg=audit(1746123797.609:195): arch=c000003e syscall=59 success=yes exit=0 a0=64b02147aa00 a1=64b02147a190 a2=64b02147b850 a3=64b02147d2e0 items=2 ppid=3250 pid=4911 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="sudo_monitoring"
+----
+time->Thu May  1 14:23:57 2025
+type=PROCTITLE msg=audit(1746123837.643:202): proctitle=7375646F006175736561726368002D6B007375646F5F6D6F6E69746F72696E67
+type=PATH msg=audit(1746123837.643:202): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=146158 dev=08:05 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1746123837.643:202): item=0 name="/usr/bin/sudo" inode=132306 dev=08:05 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1746123837.643:202): cwd="/home/zakiya"
+type=EXECVE msg=audit(1746123837.643:202): argc=4 a0="sudo" a1="ausearch" a2="-k" a3="sudo_monitoring"
+type=SYSCALL msg=audit(1746123837.643:202): arch=c000003e syscall=59 success=yes exit=0 a0=64b02139b6c0 a1=64b02147ae50 a2=64b02147b850 a3=64b02147ae50 items=2 ppid=3250 pid=4915 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="sudo_monitoring"
+----
+time->Thu May  1 14:26:12 2025
+type=PROCTITLE msg=audit(1746123972.533:219): proctitle=7375646F006175736561726368002D6B007375646F5F6D6F6E69746F72696E67
+type=PATH msg=audit(1746123972.533:219): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=146158 dev=08:05 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1746123972.533:219): item=0 name="/usr/bin/sudo" inode=132306 dev=08:05 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1746123972.533:219): cwd="/home/zakiya"
+type=EXECVE msg=audit(1746123972.533:219): argc=4 a0="sudo" a1="ausearch" a2="-k" a3="sudo_monitoring"
+type=SYSCALL msg=audit(1746123972.533:219): arch=c000003e syscall=59 success=yes exit=0 a0=64b02147d340 a1=64b02147a190 a2=64b02147b850 a3=64b02147afa0 items=2 ppid=3250 pid=4944 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="sudo_monitoring"
